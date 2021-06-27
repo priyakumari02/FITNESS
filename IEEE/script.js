@@ -10,13 +10,13 @@ sign_in_btn.addEventListener("click", () => {
   container.classList.remove("sign-up-mode");
 });
 function validate(){
-  var username=document.getElementById("username").nodeValue;
-  var password=document.getElementById("passsword").nodeValue;
+  var username=document.getElementById("username").value;
+  var password=document.getElementById("passsword").value;
   if(username="admin" && password=="user"){
-    alert("login successfully");
-    return false;
+   window.location.href="source.html";
+    
   }
   else{
-    alert("login failed");
+    alert("failed");
   }
-}
+}  
